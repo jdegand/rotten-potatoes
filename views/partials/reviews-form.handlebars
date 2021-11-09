@@ -1,0 +1,28 @@
+<fieldset>
+  <legend>Edit Review</legend>
+  <!-- TITLE -->
+  <div class="form-group">
+    <label for="review-title">Title</label><br>
+    <input class="form-control" id="review-title" type="text" name="title" value="{{review.title}}"/>
+  </div>
+
+  <!-- MOVIE TITLE -->
+  <div class="form-group">
+    <label for="movie-title">Movie Title</label><br>
+    <input class="form-control" id="movie-title" type="text" name="movieTitle" value="{{review.movieTitle}}" />
+  </div>
+
+  <!-- DESCRIPTION -->
+  <div class="form-group">
+    <label for="review-description">Description</label><br>
+    <textarea class="form-control" id="review-description" name="description" rows="10" />{{review.description}}</textarea>
+  </div>
+
+    <!-- RATING -->
+  <div class="form-group">
+    <label for="rating">How many stars?</label><br>
+    <input class="form-control" type="text" id="rating" name="rating" min="1" max="5" value="{{review.rating}}" />
+  </div>
+
+
+</fieldset>
